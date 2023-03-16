@@ -1,0 +1,17 @@
+public partial class AssetListView : ContentPage
+{
+    private AssetListViewModel viewModel;
+    
+    public AssetListView()
+    {
+        InitializeComponent();
+        viewModel = new AssetListViewModel();
+        BindingContext = viewModel;
+    }
+    
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        await viewModel.LoadAssets();
+    }
+}

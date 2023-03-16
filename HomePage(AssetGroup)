@@ -1,0 +1,52 @@
+public class HomePage : ContentPage
+{
+    public HomePage()
+    {
+        Title = "Asset Groups";
+        Padding = new Thickness(20);
+
+        // Create the asset group buttons
+        var carsButton = CreateAssetGroupButton("Cars", "car.png");
+        var trucksButton = CreateAssetGroupButton("Trucks", "truck.png");
+        var generatorButton = CreateAssetGroupButton("Generator", "generator.png");
+        var fridgesButton = CreateAssetGroupButton("Fridges", "fridge.png");
+
+        // Add the asset group buttons to a stack layout
+        var stackLayout = new StackLayout
+        {
+            Children = { carsButton, trucksButton, generatorButton, fridgesButton },
+            Spacing = 20
+        };
+
+        Content = stackLayout;
+    }
+
+    private Button CreateAssetGroupButton(string groupName, string imageName)
+    {
+        var button = new Button
+        {
+            Text = groupName,
+            FontSize = 24,
+            TextColor = Color.White,
+            BackgroundColor = Color.FromHex("#008CBA")
+        };
+        button.Clicked += (sender, args) =>
+        {
+            Navigation.PushAsync(new AssetListPage(groupName));
+        };
+
+        // Add an image to the button
+        var image = new Image
+        {
+            Source = imageName,
+            HeightRequest = 60
+        };
+        button.Content = new StackLayout
+        {
+            Children = { image, new Label { Text = groupName, TextColor = Color.White, HorizontalTextAlignment = TextAlignment.Center } },
+            Spacing = 5
+        };
+
+        return button;
+    }
+}
