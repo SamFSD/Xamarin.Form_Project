@@ -1,0 +1,18 @@
+{
+    "id": "generator-1",
+    "name": "Generator 1",
+    "type": "Generator",
+    "manufacturer": "Generac",
+    "model": "GP6500E",
+    "year": "2020",
+    "fuelType": "Gasoline",
+    "powerOutput": "6500 W",
+    "running": true,
+    "alerts": [
+      {
+        "type": "Loadshedding",
+        "message": "Generator is running, indicating loadshedding kicked in / power dropped on the site"
+      }
+    ]
+  }
+  

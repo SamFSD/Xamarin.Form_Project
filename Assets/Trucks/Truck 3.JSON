@@ -1,0 +1,14 @@
+{
+    "id": "truck-3",
+    "name": "Truck 3",
+    "type": "Truck",
+    "manufacturer": "Dodge",
+    "model": "Ram",
+    "year": "2021",
+    "color": "Gray",
+    "licensePlate": "OP7890QR",
+    "currentSpeed": "90",
+    "maxSpeed": "100",
+    "alerts": []
+  }
+  

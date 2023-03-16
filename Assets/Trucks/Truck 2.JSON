@@ -1,0 +1,19 @@
+{
+    "id": "truck-1",
+    "name": "Truck 1",
+    "type": "Truck",
+    "manufacturer": "Ford",
+    "model": "F-150",
+    "year": "2019",
+    "color": "White",
+    "licensePlate": "GH9012IJ",
+    "currentSpeed": "0",
+    "maxSpeed": "100",
+    "alerts": [
+      {
+        "type": "Stalled",
+        "message": "Truck is standing still on the same position for longer than it should. (Exceeding 2 hours)"
+      }
+    ]
+  }
+  

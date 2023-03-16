@@ -1,0 +1,14 @@
+{
+    "id": "car-2",
+    "name": "Car 2",
+    "type": "Car",
+    "manufacturer": "Toyota",
+    "model": "Camry",
+    "year": "2021",
+    "color": "Black",
+    "licensePlate": "XY5678ZW",
+    "currentSpeed": "80",
+    "maxSpeed": "120",
+    "alerts": []
+  }
+  

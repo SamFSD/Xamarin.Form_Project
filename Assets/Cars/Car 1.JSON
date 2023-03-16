@@ -1,0 +1,19 @@
+{
+    "id": "car-1",
+    "name": "Car 1",
+    "type": "Car",
+    "manufacturer": "Honda",
+    "model": "Civic",
+    "year": "2020",
+    "color": "Red",
+    "licensePlate": "AB1234CD",
+    "currentSpeed": "100",
+    "maxSpeed": "120",
+    "alerts": [
+      {
+        "type": "Speeding",
+        "message": "Vehicle is traveling at 140km/h and should not go faster than 120km/h"
+      }
+    ]
+  }
+  
