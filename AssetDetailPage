@@ -1,9 +1,0 @@
-public class AssetDetailPage : ContentPage
-{
-    private readonly Asset _asset;
-
-    public AssetDetailPage(Asset asset)
-    {
-        _asset = asset;
-        Title = asset.Name;
-        Padding

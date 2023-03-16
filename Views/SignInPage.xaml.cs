@@ -11,7 +11,19 @@ namespace MyApp.Views
 
         private async void SignInButton_Clicked(object sender, EventArgs e)
         {
-            // TODO: Perform sign-in logic here
+            var username = UsernameEntry.Text;
+            var password = PasswordEntry.Text;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                await DisplayAlert("Error", "Username and password are required.", "OK");
+                return;
+            }
+
+            var isAuthenticated = await _userService.AuthenticateUser(username, password);
+
+            if (isAuthenticated)
+            {
 
             // Navigate to the homepage
             await Navigation.PushAsync(new HomePage());
