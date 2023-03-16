@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IoTApp.Views.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Asset Groups" FontAttributes="Bold" FontSize="Large" Margin="10,10,10,0"/>
+            <ScrollView>
+                <StackLayout>
+                    <Frame Margin="10,10,10,0" Padding="10" CornerRadius="10" BackgroundColor="#F2F2F2">
+                        <Label Text="Vehicles" FontAttributes="Bold" FontSize="Medium" Margin="0,0,0,5"/>
+                        <StackLayout>
+                            <Frame Margin="0,0,0,5" Padding="10" CornerRadius="10" BackgroundColor="White" HasShadow="True">
+                                <Label Text="Car 1" FontAttributes="Bold" Margin="0,0,0,5"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Current Speed: " FontAttributes="Bold"/>
+                                    <Label Text="120 km/h" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Status: " FontAttributes="Bold"/>
+                                    <Label Text="OK" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame Margin="0,0,0,5" Padding="10" CornerRadius="10" BackgroundColor="White" HasShadow="True">
+                                <Label Text="Car 2" FontAttributes="Bold" Margin="0,0,0,5"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Current Speed: " FontAttributes="Bold"/>
+                                    <Label Text="140 km/h" TextColor="Red" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Status: " FontAttributes="Bold"/>
+                                    <Label Text="Unresponsive" TextColor="Red" />
+                                </StackLayout>
+                            </Frame>
+                            <Label Text="No more vehicles found." FontAttributes="Italic" HorizontalOptions="Center" IsVisible="False" x:Name="NoVehicleLabel"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Margin="10,10,10,0" Padding="10" CornerRadius="10" BackgroundColor="#F2F2F2">
+                        <Label Text="Equipment" FontAttributes="Bold" FontSize="Medium" Margin="0,0,0,5"/>
+                        <StackLayout>
+                            <Frame Margin="0,0,0,5" Padding="10" CornerRadius="10" BackgroundColor="White" HasShadow="True">
+                                <Label Text="Truck 1" FontAttributes="Bold" Margin="0,0,0,5"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Location: " FontAttributes="Bold"/>
+                                    <Label Text="Warehouse 1" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Status: " FontAttributes="Bold"/>
+                                    <Label Text="OK" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame Margin="0,0,0,5" Padding="10" CornerRadius="10" BackgroundColor="White" HasShadow="True">
+                                <Label Text="Truck 2" FontAttributes="Bold" Margin="0,0,0,5"/>
+                                <StackLayout Orientation="Horizontal">
+                                   
