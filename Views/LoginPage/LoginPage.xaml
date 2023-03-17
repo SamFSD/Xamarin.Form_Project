@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MySolution.Views.LoginPage">
+
+    <StackLayout Margin="20">
+        <Label Text="Login" FontSize="Large" Margin="0,20,0,0" HorizontalOptions="Center" />
+        <Entry Placeholder="Username" x:Name="usernameEntry" Margin="0,20,0,0" />
+        <Entry Placeholder="Password" IsPassword="True" x:Name="passwordEntry" Margin="0,10,0,0" />
+        <Button Text="Login" x:Name="loginButton" Margin="0,20,0,0" Clicked="OnLoginButtonClicked" />
+        <Label x:Name="errorMessage" TextColor="Red" Margin="0,20,0,0" />
+    </StackLayout>
+
+</ContentPage>
