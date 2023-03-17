@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApp.Views.HomePage"
+             Title="Asset Groups">
+    <StackLayout>
+        <Label Text="Asset Groups"
+               FontSize="Large"
+               Margin="10"
+               HorizontalOptions="Center" />
+        <CollectionView x:Name="AssetGroupsCollection"
+                        SelectionMode="Single"
+                        SelectionChanged="OnSelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Margin="5"
+                                 Padding="10">
+                        <Frame BorderColor="Gray"
+                               CornerRadius="10"
+                               HasShadow="True"
+                               Padding="5">
+                            <StackLayout>
+                                <Label Text="{Binding GroupName}"
+                                       FontAttributes="Bold" />
+                                <Label Text="{Binding Count, StringFormat='{0} assets'}"
+                                       FontSize="Small" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>
